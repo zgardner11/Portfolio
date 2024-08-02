@@ -1119,7 +1119,7 @@ and (max-device-width: 1240px)
     width: fit-content;
   }
   
-  #logo{
+  footer #logo{
     width: 11vh;
     top: 0;
     order: 1;
@@ -1210,11 +1210,17 @@ and (max-device-width: 1240px)
 
   .page-nav{
     text-align: center;
+    padding: 0;
+    border: none;
   }
 
   .page-nav ul{
     flex-direction: column;
     gap: 4rem 0;
+  }
+
+  .page-video .page-header{
+    margin: auto;
   }
 
   /* Index/Home */
@@ -1249,7 +1255,6 @@ and (max-device-width: 1240px)
     margin: auto;
     padding: 0;
   }
-
 
   .products-main{
     flex-direction: column;
@@ -1307,6 +1312,7 @@ and (max-device-width: 1240px)
     left: 0;
   }
 
+
   .page-video{
     flex-direction: column;
   }
@@ -1344,7 +1350,8 @@ and (max-device-width: 1240px)
 
   #contact .logo{
     position: relative;
-    width: fit-content;
+    width: 50%;
+    max-width: 15rem;
     top: 2rem;
     height: auto;
   }
