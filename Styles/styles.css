@@ -9,10 +9,6 @@
 :root{
 
   --cream:#eee7dd;
-  /* rgb(221, 215, 210); */
-
-  --logored:#c32033;
-  --darkred:#b12222;
 
   --main: rgb(222, 222, 222);
   --alt: rgb(168, 174, 185); 
@@ -192,7 +188,6 @@ button{
   display: flex;
   position: relative;
   width: 69%;
-  padding-left: 2em;
   margin-left: auto;
 }
 
@@ -213,11 +208,12 @@ button{
   display: flex;
   color: black;
   font-weight: 200;
-  padding: 1rem;
+  padding: .5rem;
   height: 80%;
   position: relative;
   justify-content: center;
   font-size: var(--mediumfont);
+  border-right: solid var(--alt) 1.5px;
 }
   
 .navlinks-menu > li > a:hover {
@@ -311,12 +307,11 @@ nav a::before {
 }
 
 .dropdown-nav ul li a{
-  color: var(--cream);
-  opacity: 75%;
+  color: var(--indigo);
 }
 
 .navlinks .active-nav{
-  color: var(--darkred);
+  color: var(--main);
   font-size: 1.03em;
 }
 
@@ -367,7 +362,7 @@ nav a::before {
 }
 
 #main-outer{
-  margin: 5rem auto 0;
+  margin: 2rem auto 0;
   height: fit-content;
 }
 
@@ -376,7 +371,7 @@ nav a::before {
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
-  padding: 11rem;
+  padding: 7rem;
   gap: 7rem; 
   background: rgba(255, 255, 255, 0.7);
 }
@@ -425,7 +420,6 @@ nav a::before {
 .main-inner-select p{
   padding: 2rem 0;
   font-size: var(--mediumfont);
-  color: var(--cream);
   max-width: 30ch;
 }
 
@@ -474,7 +468,7 @@ nav a::before {
   top: 5rem;
   bottom: 0;
   height: 2px;
-  background: var(--cream);
+  background: var(--indigo);
   width: 25%;
 }
 
@@ -484,11 +478,6 @@ nav a::before {
 
 .main-inner:nth-child(2n){
   background: var(--cream);
-}
-
-.main-inner:nth-child(2n) .main-inner-select h3 a::after{
-  /* make lines after headers dark color */
-  background: var(--main);
 }
 
 .main-inner:nth-child(3){
@@ -766,6 +755,13 @@ nav a::before {
   gap: 5rem 0;
 }
 
+.cinema-inner header h3{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: var(--smallfont);
+  margin: auto;
+  width: fit-content;
+}
+
 .cinema-outer h3{
   font-size: var(--headerfont);
   font-weight: 400;
@@ -1036,7 +1032,7 @@ footer .contact-info:hover::after{
   width: 2rem;
   height: fit-content;
   margin: 1.5rem auto;
-  border-bottom: var(--cream) solid 2px;
+  border-bottom: var(--indigo) solid 2px;
   padding-bottom: .7em;
   transform: scale(1.2);
   transition: all 420ms ease-out;
