@@ -22,18 +22,6 @@
   --darkblue2:rgba(12, 7, 32, 0.987);
 
   --indigo:#171625;
- 
-  
-
-  --main-bg-color: linear-gradient(
-   to bottom,
-   var(--cream), 
-   var(--silverblue));
-
-  --reverse-bg-color: linear-gradient(
-   to top, 
-   var(--silverblue), 
-   white);
   
   --headerfont: 4.5rem;
   --largefont: 2.3rem;
@@ -833,17 +821,16 @@ nav a::before {
 }
 
 .media-scroller{
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 30%;
+  display: flex;
   align-items: center;
   overflow-x: auto;
   overscroll-behavior-inline: contain;
-  gap: 1em;
+  gap: 2em;
+  padding: 2rem;
 }
 
 .media-scroller img{
-  width: 40rem;
+  width: 35rem;
   height: auto;
 }
 
@@ -1065,6 +1052,14 @@ footer .contact-info:hover::after{
 and (max-device-width: 1240px) 
 {
 
+  :root{
+    --headerfont: 3.2rem;
+    --largefont: 1.6rem;
+    --mediumfont: 1.1rem;
+    --smallfont: 1.25rem;
+    --textfont: 1rem;
+  }
+
   body,html {
     /* hide navigation when off screen */
     overflow-x: hidden;
@@ -1212,11 +1207,15 @@ and (max-device-width: 1240px)
     text-align: center;
     padding: 0;
     border: none;
+    margin: 3rem auto;
   }
 
   .page-nav ul{
     flex-direction: column;
     gap: 4rem 0;
+    border: var(--main) solid 2px;
+    padding: 2rem 7rem 4rem;
+    border-radius: 2px 7px 2px 7px;
   }
 
   .page-video .page-header{
@@ -1229,9 +1228,15 @@ and (max-device-width: 1240px)
     font-size: var(--largefont);
   }
 
+  #main-outer{
+    margin: 5rem auto 0;
+    height: fit-content;
+  }
+
   .main-inner{
     gap: 4rem 0;
-    padding: 7rem 4rem;
+    padding: 4rem 0;
+    border-bottom: var(--indigo) solid 2px;
     flex-direction: column;
   }
 
@@ -1241,6 +1246,11 @@ and (max-device-width: 1240px)
 
   .main-inner-select{
     width: 40ch;
+    order: -1;
+  }
+
+  .main-inner-select p{
+    padding: 2.75rem 0;
   }
 
   .main-inner:nth-child(odd) .link{
@@ -1277,12 +1287,12 @@ and (max-device-width: 1240px)
 
   /* Portraits */
 
-  .media-scroller img{
-    width: 100%;
-  }
-
   .portraits-page header{
     padding: 1em;
+  }
+
+  .media-scroller img{
+    width: 22rem;
   }
 
   /* Cinema */
@@ -1299,7 +1309,7 @@ and (max-device-width: 1240px)
   }
 
   .cinema-inner{
-    padding: 5rem 0 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
   }
@@ -1308,10 +1318,13 @@ and (max-device-width: 1240px)
     width: 100%;
   }
 
+  .cinema-inner.inline{
+    gap: 2rem 0;
+  }
+
   .inner-vid-indent{
     left: 0;
   }
-
 
   .page-video{
     flex-direction: column;
@@ -1354,14 +1367,14 @@ and (max-device-width: 1240px)
     max-width: 15rem;
     top: 2rem;
     height: auto;
+    padding-bottom: 5rem;
   }
 
   #contact-inner{
     padding-left: 0;
     min-height: auto;
-    margin-top: 5rem;
-    padding-top: 3rem;
-    border-top: var(--alt) solid 3px;
+    order: -1;
+    border-bottom: var(--alt) solid 3px;
   }
 
   .contact-line{
