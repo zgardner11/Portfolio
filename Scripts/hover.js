@@ -8,3 +8,4 @@ videoThumbs.forEach(function(videoThumb){
     videoThumb.addEventListener("mouseover", 
     videoThumb.style.display = "none")
 })
+

@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="Styles/styles.css">
         <script src="Scripts/main.js" defer></script>
         <script src="Scripts/controls.js" defer></script>
+        <script src="https://player.vimeo.com/api/player.js"></script>
     </head>
 
 <body>
@@ -25,8 +26,6 @@
             <span class = "bar" id = "bar2"></span>
             <span class = "bar"></span>
         </div>
-
-  
 
         <section class = "navlinks"> 
             <ul class = "navlinks-menu">
@@ -69,7 +68,6 @@
             </ul>
         </section>
     </nav>
-    
 
     <main>
 
@@ -115,14 +113,21 @@
                 </article>
 
                 <div class="cinema-inner inline">
-                    <video muted playsinline poster="Media\Cinema\scdronethumb.png"> 
-                        <source src="Media\Cinema\fpv2020.mp4" type="video/mp4"> 
-                    </video>
+     
+                    <div class = "cinema-vid">
+                        <iframe src="https://player.vimeo.com/video/995149985?h=c51365d80c&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
+                        </iframe>
+                    </div>
 
                     <header>
                         <h3>Soaring Over San Clemente</h3>
                     </header>
-                 
+
+                    <div class = "cinema-vid">
+                       <iframe src="https://player.vimeo.com/video/995196637?h=5c8010b098&color=ffffff&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+
                     <video muted playsinline poster="Media\Cinema\fpvexteriorthumb.png"> 
                         <source src="Media\Cinema\CottonwoodAerialWeb.mp4" type="video/mp4"> 
                     </video>

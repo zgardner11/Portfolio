@@ -1,11 +1,8 @@
-// let videoThumbs = document.querySelectorAll('.video-thumbnail');
+// Target element in elements
 
-// videoThumbs.forEach(function(videoThumb){
-//     console.log("videoThumb: ", videoThumb);
+// Play element on click
 
-//     videoThumb.addEventListener("mouseover", 
-//     videoThumb.style.display = "none")
-// })
+// Pause element on click
 
 document.getElementById('video').onclick = function () {
     document.getElementById('video').play();

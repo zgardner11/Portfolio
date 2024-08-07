@@ -732,6 +732,7 @@ nav a::before {
 
 .cinema-outer{
   display: flex;
+  flex-direction: column;
   /* padding: 5rem; */
 }
 
@@ -742,11 +743,28 @@ nav a::before {
 
 .cinema-inner{
   position: relative;
+  display: flex;
+  width: fit-content;
   padding: 1rem;
+  /* border: green solid 3px; */
 }
 
-.cinema-inner video{
-  width: 42vw;
+.cinema-vid{
+  display: flex;
+  position: relative;
+  margin: auto;
+  height: fit-content;
+  width: fit-content;
+  /* border: orange solid 3px; */
+}
+
+.cinema-vid iframe{
+  /* display: flex; */
+  position: relative;
+  width: 50vw;
+  height: auto;
+  aspect-ratio: 16/9;
+  min-width: 370px;
 }
 
 .cinema-inner.inline{
@@ -839,6 +857,16 @@ nav a::before {
   scroll-snap-align: start;
 }
 
+.shift-scroll{
+  /* border: black solid 3px; */
+  width: fit-content;
+  position: relative;
+  left: 2rem;
+}
+
+.shift-scroll h3{
+  font-weight: 200;
+}
 /* Contact */
 
 #contact{
@@ -1289,6 +1317,10 @@ and (max-device-width: 1240px)
 
   .media-scroller img{
     width: 22rem;
+  }
+
+  .shift-scroll{
+    display: none;
   }
 
   /* Cinema */
