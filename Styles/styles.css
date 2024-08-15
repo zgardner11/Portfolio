@@ -352,7 +352,7 @@ nav a::before {
   font-size: var(--largefont);
   /* border-bottom: 1.5px var(--lightblue) solid; */
   border-radius: 3%;
-  padding-bottom: .7rem;
+  padding-bottom: 1rem;
 }
 
 .page-nav ul li:hover{
@@ -1332,14 +1332,22 @@ and (max-device-width: 1240px)
 
   .page-nav ul{
     flex-direction: column;
-    gap: 4rem 0;
+    gap: 2rem 0;
     /* border: var(--main) solid 2px; */
-    padding: 2rem 0;
+    padding: 3rem 0 0;
     border-radius: 2px 7px 2px 7px;
   }
 
   .page-nav ul li{
     border: none;
+  }
+
+  .page-nav ul li a{
+    padding-bottom: 3rem;
+  }
+
+  .page-nav ul li:last-child a::after{
+    display: none;
   }
 
   .page-video .page-header{
