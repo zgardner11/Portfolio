@@ -6,9 +6,9 @@
 
 :root{
 
-  --cream:#eee7dd;
+  --cream:#eeeff1;
 
-  --main: rgb(208, 205, 204);
+  --main: rgb(179, 184, 199);
   --alt: rgb(174, 179, 188); 
 
   --lightblue: rgb(173, 182, 190);
@@ -386,7 +386,7 @@ nav a::before {
 }
 
 #main-outer{
-  margin: 2rem auto 0;
+  margin: auto;
   height: fit-content;
 }
 
@@ -395,7 +395,7 @@ nav a::before {
 }
 
 .home-inner{
-  padding: 7em;
+  padding: 5em;
 }
 
 .main-inner{
